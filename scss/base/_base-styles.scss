@@ -14,6 +14,61 @@ body {
   font-weight: 400;
   font-family: $font-family;
   color: $font-color;
+  background-color: $secondary-color;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  background-color: $secondary-color;
+  height: 80px;
+
+    .button {
+      font-size: 1.5rem;
+      height: 100%;
+      margin: 0px;
+      border: 0px;
+      color: $light-tan;
+      border-radius:  0px;
+      padding: 10px 10px;
+
+    }
+    #active {
+      background-color: $primary-color;
+    }
+    img {
+      max-height: 75px;
+    }
+}
+
+.banner {
+  background-color: $primary-color;
+  color: $light-tan;
+  text-align: center;
+  h2 {
+    margin: 0px;
+    padding: 10px 0px;
+  }
+}
+
+.hero-image {
+  background-image: url("../images/hero.jpg");
+  background-position: bottom;
+  background-size: cover;
+  padding: 0px;
+}
+
+.hero-mask {
+  background-color: rgba(255,255,255,.7);
+  padding: 60px 0px;
+}
+
+.hero-text {
+  text-align: center;
+  padding: 20px 0px;
+  color: $secondary-color;
 }
 
 // Links
@@ -33,5 +88,5 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid $light-grey;
+  border-top: 1px solid $light-tan;
 }
