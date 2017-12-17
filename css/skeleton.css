@@ -211,8 +211,17 @@ body {
 h1 {
   text-align: center; }
 
+.navbar-spacer {
+  height: 6rem;
+  display: block; }
+
 nav {
-  background-color: #041e42; }
+  background-color: #041e42;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99; }
   nav .navbar-list {
     list-style: none;
     border-left: 1px #cbb9a8 solid; }
@@ -220,6 +229,8 @@ nav {
     float: right;
     margin-bottom: 0px; }
   nav .button {
+    height: 6rem;
+    line-height: 6rem;
     margin-bottom: 0px;
     border: 0px;
     border-radius: 0px;
@@ -228,11 +239,15 @@ nav {
     padding: 0px 15px;
     border-left: 1px #cbb9a8 solid; }
   nav .button:hover {
-    background-color: #073472; }
+    background-color: #f8b217;
+    color: #041e42; }
   nav #donate {
     background-color: #f8b217;
     color: #041e42;
     border-right: 0px; }
+  nav #donate:hover {
+    background-color: #145c9e;
+    color: #dcc7be; }
   nav #active {
     background-color: #145c9e; }
   nav .dropdown-list {
@@ -245,32 +260,48 @@ nav {
     margin: 0px; }
     nav .dropdown-item .button {
       width: 100%;
-      text-align: left; }
+      text-align: left;
+      border: 0px; }
   nav .navbar-item:hover .dropdown-list {
     display: block; }
 
 .banner {
   background-color: #145c9e;
   color: #dcc7be;
-  text-align: center; }
-  .banner h2 {
-    margin: 0px;
-    padding: 10px 0px; }
+  text-align: center;
+  padding: 20px 10px; }
+
+.banner-spacer {
+  height: 6rem;
+  display: block; }
 
 .hero-image {
   background-image: url("../images/hero.jpg");
   background-position: bottom;
   background-size: cover;
   padding: 0px; }
-
-.hero-mask {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 60px 0px; }
-
-.hero-text {
-  text-align: center;
-  padding: 20px 0px;
-  color: #041e42; }
+  .hero-image .hero-mask {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 60px 0px; }
+  .hero-image .hero-text {
+    text-align: center;
+    padding: 20px 0px;
+    color: #041e42; }
+  .hero-image .button {
+    margin-bottom: 0px;
+    border: 0px;
+    color: #dcc7be;
+    font-size: 1.5rem;
+    padding: 0px 15px; }
+  .hero-image .button:hover {
+    background-color: #f8b217;
+    color: #041e42; }
+  .hero-image #donate {
+    background-color: #f8b217;
+    color: #041e42; }
+  .hero-image #donate:hover {
+    background-color: #145c9e;
+    color: #dcc7be; }
 
 a {
   color: #145c9e; }
