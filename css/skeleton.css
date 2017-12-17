@@ -204,15 +204,16 @@ body {
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222;
+  font-family: "Quattrocentro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #dcc7be;
   background-color: #041e42; }
 
 h1 {
   text-align: center; }
 
 nav {
-  background-color: #041e42; }
+  background-color: #041e42;
+  height: 80px; }
   nav .button {
     font-size: 1.5rem;
     height: 100%;
@@ -220,9 +221,11 @@ nav {
     border: 0px;
     color: #dcc7be;
     border-radius: 0px;
-    padding: 0px 10px; }
+    padding: 10px 10px; }
   nav #active {
     background-color: #145c9e; }
+  nav img {
+    max-height: 75px; }
 
 .banner {
   background-color: #145c9e;
@@ -244,10 +247,8 @@ nav {
 
 .hero-text {
   text-align: center;
-  padding: 20px 0px; }
-
-img {
-  width: 100%; }
+  padding: 20px 0px;
+  color: #041e42; }
 
 a {
   color: #145c9e; }

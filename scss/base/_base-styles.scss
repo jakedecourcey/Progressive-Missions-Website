@@ -23,19 +23,23 @@ h1 {
 
 nav {
   background-color: $secondary-color;
+  height: 80px;
 
-  .button {
-    font-size: 1.5rem;
-    height: 100%;
-    margin: 0px;
-    border: 0px;
-    color: $light-tan;
-    border-radius:  0px;
-    padding: 0px 10px;
+    .button {
+      font-size: 1.5rem;
+      height: 100%;
+      margin: 0px;
+      border: 0px;
+      color: $light-tan;
+      border-radius:  0px;
+      padding: 10px 10px;
 
-  }
+    }
     #active {
       background-color: $primary-color;
+    }
+    img {
+      max-height: 75px;
     }
 }
 
@@ -44,8 +48,8 @@ nav {
   color: $light-tan;
   text-align: center;
   h2 {
-  margin: 0px;
-  padding: 10px 0px;
+    margin: 0px;
+    padding: 10px 0px;
   }
 }
 
@@ -64,12 +68,7 @@ nav {
 .hero-text {
   text-align: center;
   padding: 20px 0px;
-}
-
-// Images
-//--------------------------------------------------
-img {
-  width: 100%;
+  color: $secondary-color;
 }
 
 // Links
