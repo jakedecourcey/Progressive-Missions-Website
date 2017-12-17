@@ -204,7 +204,7 @@ body {
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Quattrocentro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #dcc7be;
   background-color: #041e42; }
 
@@ -212,20 +212,42 @@ h1 {
   text-align: center; }
 
 nav {
-  background-color: #041e42;
-  height: 80px; }
+  background-color: #041e42; }
+  nav .navbar-list {
+    list-style: none;
+    border-left: 1px #cbb9a8 solid; }
+  nav .navbar-item {
+    float: right;
+    margin-bottom: 0px; }
   nav .button {
-    font-size: 1.5rem;
-    height: 100%;
-    margin: 0px;
+    margin-bottom: 0px;
     border: 0px;
-    color: #dcc7be;
     border-radius: 0px;
-    padding: 10px 10px; }
+    color: #dcc7be;
+    font-size: 1.5rem;
+    padding: 0px 15px;
+    border-left: 1px #cbb9a8 solid; }
+  nav .button:hover {
+    background-color: #073472; }
+  nav #donate {
+    background-color: #f8b217;
+    color: #041e42;
+    border-right: 0px; }
   nav #active {
     background-color: #145c9e; }
-  nav img {
-    max-height: 75px; }
+  nav .dropdown-list {
+    display: none;
+    list-style: none;
+    position: fixed;
+    background-color: #145c9e;
+    margin: 0px; }
+  nav .dropdown-item {
+    margin: 0px; }
+    nav .dropdown-item .button {
+      width: 100%;
+      text-align: left; }
+  nav .navbar-item:hover .dropdown-list {
+    display: block; }
 
 .banner {
   background-color: #145c9e;

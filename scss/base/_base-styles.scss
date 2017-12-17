@@ -21,26 +21,66 @@ h1 {
   text-align: center;
 }
 
+
 nav {
   background-color: $secondary-color;
-  height: 80px;
+
+  .navbar-list{
+    list-style: none;
+    border-left: 1px $dark-tan solid;
+  }
+
+  .navbar-item {
+    float: right;
+    margin-bottom: 0px;
+  }
+
+  .button {
+    margin-bottom: 0px;
+    border: 0px;
+    border-radius: 0px;
+    color: $light-tan;
+    font-size: 1.5rem;
+    padding: 0px 15px;
+    border-left: 1px $dark-tan solid;
+  }
+
+  .button:hover {
+    background-color: lighten($secondary-color, 10%);
+  }
+
+  #donate {
+    background-color: $impact-color;
+    color: $secondary-color;
+    border-right: 0px;
+  }
+
+  #active {
+    background-color: $primary-color;
+  }
+
+  .dropdown-list {
+    display: none;
+    list-style: none;
+    position: fixed;
+    background-color: $primary-color;
+    margin: 0px;
+  }
+
+  .dropdown-item {
+    margin: 0px;
 
     .button {
-      font-size: 1.5rem;
-      height: 100%;
-      margin: 0px;
-      border: 0px;
-      color: $light-tan;
-      border-radius:  0px;
-      padding: 10px 10px;
+    width: 100%;
+    text-align: left;
+  }
+  }
 
-    }
-    #active {
-      background-color: $primary-color;
-    }
-    img {
-      max-height: 75px;
-    }
+  .navbar-item:hover {
+    .dropdown-list {
+    display: block;
+  }
+}
 }
 
 .banner {
