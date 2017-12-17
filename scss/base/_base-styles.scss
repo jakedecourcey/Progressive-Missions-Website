@@ -21,44 +21,107 @@ h1 {
   text-align: center;
 }
 
+
+.navbar-spacer{
+  height: 6rem;
+  display: block;
+}
+
 nav {
   background-color: $secondary-color;
-  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+
+  .navbar-list{
+    list-style: none;
+    border-left: 1px $dark-tan solid;
+  }
+
+  .navbar-item {
+    float: right;
+    margin-bottom: 0px;
+  }
+
+  .button {
+    height: 6rem;
+    line-height: 6rem;
+    margin-bottom: 0px;
+    border: 0px;
+    border-radius: 0px;
+    color: $light-tan;
+    font-size: 1.5rem;
+    padding: 0px 15px;
+    border-left: 1px $dark-tan solid;
+  }
+
+  .button:hover {
+    background-color: $impact-color;
+    color: $secondary-color;
+  }
+
+  #donate {
+    background-color: $impact-color;
+    color: $secondary-color;
+    border-right: 0px;
+  }
+
+  #donate:hover{
+    background-color: $primary-color;
+    color: $light-tan;
+  }
+
+  #active {
+    background-color: $primary-color;
+  }
+
+  .dropdown-list {
+    display: none;
+    list-style: none;
+    position: fixed;
+    background-color: $primary-color;
+    margin: 0px;
+  }
+
+  .dropdown-item {
+    margin: 0px;
 
     .button {
-      font-size: 1.5rem;
-      height: 100%;
-      margin: 0px;
-      border: 0px;
-      color: $light-tan;
-      border-radius:  0px;
-      padding: 10px 10px;
+    width: 100%;
+    text-align: left;
+    border: 0px;
+  }
+  }
 
-    }
-    #active {
-      background-color: $primary-color;
-    }
-    img {
-      max-height: 75px;
-    }
+  .navbar-item:hover {
+    .dropdown-list {
+    display: block;
+  }
+}
 }
 
 .banner {
   background-color: $primary-color;
   color: $light-tan;
   text-align: center;
-  h2 {
-    margin: 0px;
-    padding: 10px 0px;
-  }
+  padding: 20px 10px;
 }
+
+.banner-spacer {
+  height: 6rem;
+  display: block;
+}
+
+// Hero
+//--------------------------------------------------
 
 .hero-image {
   background-image: url("../images/hero.jpg");
   background-position: bottom;
   background-size: cover;
   padding: 0px;
-}
 
 .hero-mask {
   background-color: rgba(255,255,255,.7);
@@ -71,6 +134,29 @@ nav {
   color: $secondary-color;
 }
 
+.button {
+  margin-bottom: 0px;
+  border: 0px;
+  color: $light-tan;
+  font-size: 1.5rem;
+  padding: 0px 15px;
+}
+
+.button:hover {
+  background-color: $impact-color;
+  color: $secondary-color;
+}
+
+#donate {
+  background-color: $impact-color;
+  color: $secondary-color;
+}
+
+#donate:hover{
+  background-color: $primary-color;
+  color: $light-tan;
+}
+}
 // Links
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 

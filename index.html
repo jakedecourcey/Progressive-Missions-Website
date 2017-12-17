@@ -16,7 +16,7 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <link href="https://fonts.googleapis.com/css?family=Quattrocento:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:700|Raleway:400,900" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,21 +32,76 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <body>
+  <div class="navbar-spacer" id="home"></div>
   <nav>
+
     <div class="container">
+
       <div class="row">
+
         <div class="three columns">
-          <img src="images/logo.png"/>
+          logo
+          <!--<img src="images/logo.png"/>-->
         </div>
+
         <div class="nine columns">
-          <a class="button" id="active" href="#">Home</a></button>
-          <a class="button" href="#">Projects</a></button>
-          <a class="button" href="#">Get Involved</a></button>
-          <a class="button" href="#">Contact</a></button>
-          <a class="button" href="#">Donate</a></button>
-        </div>
-      </div>
-    </div>
+
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a class="button" id="donate" href="#donation">Donate</a>
+            </li>
+
+            <li class="navbar-item">
+              <a class="button" href="#contact">Contact</a>
+            </li>
+
+            <li class="navbar-item">
+              <a class="button" href="#get-involved">Get Involved</a>
+
+              <ul class="dropdown-list">
+
+                <li class="dropdown-item">
+                  <a class="button" href="#support-orphans">Orphans</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a class="button" href="#support-businesses">Businesses</a>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="navbar-item">
+              <a class="button" href="#learn">Learn</a>
+
+                <ul class="dropdown-list">
+
+                  <li class="dropdown-item">
+                    <a class="button" href="#orphan-project">Orphan Project</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a class="button" href="#bop">Business on Purpose</a>
+                  </li>
+
+                </ul>
+
+            </li>
+
+            <li class="navbar-item">
+              <a class="button" id="active" href="#home">Home</a>
+            </li>
+
+          </ul>
+
+        </div> <!-- Column -->
+
+      </div> <!-- Row -->
+
+    </div> <!-- Container -->
+
   </nav>
 
   <!--Hero Banner-->
@@ -57,16 +112,16 @@
 
         <h3>We address poverty by investing in people</h3>
 
-        <button class="button-primary">Donate</button>
+        <a class="button" id="donate" href="#donation">Donate</a>
       </div>
     </div>
   </div>
   <!--End hero Banner-->
 
-  <div class="banner">
-    <h2>What does it look like to help the needy?</h2>
-  </div>
+  <h2 class="banner">What does it look like to help the needy?</h2>
+
   <div class="container">
+
     <div class="row"> <!-- Row 3 -->
 
       <div class="six columns">
@@ -82,15 +137,20 @@
       </div>
 
     </div> <!-- Row 3 -->
+
   </div>
-  <div class="banner">
-    <h2>Our Missions</h2>
-  </div>
+
+  <div class="banner-spacer" id="learn"></div>
+
+    <h2 class="banner">This is what we do.</h2>
+
   <div class="container">
+
     <div class="row"> <!-- Row 5 -->
+
       <div class="four columns">
         <img class="u-max-full-width" src="images/square.jpg"/>
-      </div>
+      </div> <!-- Column -->
 
       <div class="eight columns">
         <h3>Uganda Orphan Project</h3>
@@ -99,10 +159,12 @@
         <h5>That’s 2.2 million orphaned children.</h5>
 
         <p>These are children who need to be rescued and a system that needs to be rehabilitated.</p>
-      </div>
+      </div> <!-- Column -->
 
-    </div> <!-- Row 5 -->
-    <div class="row"> <!-- Row 6 -->
+    </div> <!-- Row -->
+
+    <div class="row">
+
       <div class="eight columns">
         <h3>Business on Purpose</h3>
         <p>As of 2014, Uganda’s population is 39 million people. Of that population, 48.2% are 0-14 years old. 12% of these children are orphans. Years of war, famine and AIDS have left a generation of Ugandans without parents.*</p>
@@ -111,18 +173,23 @@
 
         <p>These are children who need to be rescued and a system that needs to be rehabilitated.</p>
       </div>
+
       <div class="four columns">
         <img class="u-max-full-width" src="images/square.jpg"/>
       </div>
-    </div> <!-- Row 6 -->
-  </div>
-  <div class="row"> <!-- Row 7 -->
-    <h2 class="banner">Contacts</h2>
-  </div> <!-- Row 7 -->
 
-  <div class="row"> <!-- Row 8 -->
+    </div> <!-- Row -->
+
+  </div> <!-- Container -->
+
+  <div class="banner-spacer" id="get-involved"></div>
+    <h2 class="banner">You have a role</h2>
+
+    <div class="banner-spacer" id="contact"></div>
+    <h2 class="banner">Contact</h2>
+
+    <div class="banner-spacer" id="donation"></div>
     <h2 class="banner">Donate</h2>
-  </div> <!-- Row 8 -->
 
 </div> <!-- Container -->
 
