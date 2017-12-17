@@ -1,12 +1,28 @@
-Flow:
+Navbar
+-Home
+-Projects
+--BOP
+--Orphan Project
+-Get Involved
+-Contact
+-**Donate**
 
-What is?
 
-What do we do?
-  -Business
-  -Orphans
+Progressive Missions
 
-Get involved
-  -Business
-  -Orphans
-  -Donate
+
+What does it mean to help the needy?
+-Rescue
+-Rehabilitation
+
+How we work
+-Orphans
+-Business
+
+You have a role
+-orphans
+-Business
+
+Contact form
+
+Donate

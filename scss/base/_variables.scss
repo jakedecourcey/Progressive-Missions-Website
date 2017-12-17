@@ -9,13 +9,14 @@ $bp-larger-than-desktop   : "min-width: 1000px" !default;
 $bp-larger-than-desktophd : "min-width: 1200px" !default;
 
 // Colors
-$light-grey: #e1e1e1 !default;
-$dark-grey: #333 !default;
-$primary-color: #33c3f0 !default;
-$secondary-color: lighten($dark-grey, 13.5%) !default;
-$border-color: #bbb !default;
-$link-color: #1eaedb !default;
+$light-tan: #dcc7be !default;
+$dark-tan: #cbb9a8 !default;
+$primary-color: #145c9e !default;
+$secondary-color: #041e42 !default;
+$border-color: #cbb9a8 !default;
+$link-color: #145c9e !default;
 $font-color: #222 !default;
+$impact-color: #f8b217;
 
 // Typography
 $font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
