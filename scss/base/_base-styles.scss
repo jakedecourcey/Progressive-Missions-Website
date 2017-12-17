@@ -21,6 +21,12 @@ h1 {
   text-align: center;
 }
 
+strong {
+  color: $primary-color;
+}
+
+//Navigation
+//-----------------------------------------------------------------
 
 .navbar-spacer{
   height: 6rem;
@@ -34,6 +40,22 @@ nav {
   left: 0;
   width: 100%;
   z-index: 99;
+  border-bottom: 1px $dark-tan solid;
+
+  img {
+    height: 6rem;
+    display: block;
+  }
+
+  .text-box {
+    height: 6rem;
+    margin-left: -40px;    
+
+    h4 {
+      line-height: 3rem;
+      margin-bottom: 0rem;
+    }
+  }
 
   .navbar-list{
     list-style: none;
@@ -89,18 +111,21 @@ nav {
     margin: 0px;
 
     .button {
-    width: 100%;
-    text-align: left;
-    border: 0px;
-  }
+      width: 100%;
+      text-align: left;
+      border: 0px;
+    }
   }
 
   .navbar-item:hover {
     .dropdown-list {
-    display: block;
+      display: block;
+    }
   }
 }
-}
+
+//Banners
+//--------------------------------------------------
 
 .banner {
   background-color: $primary-color;
@@ -123,39 +148,39 @@ nav {
   background-size: cover;
   padding: 0px;
 
-.hero-mask {
-  background-color: rgba(255,255,255,.7);
-  padding: 60px 0px;
-}
+  .hero-mask {
+    background-color: rgba(255,255,255,.7);
+    padding: 60px 0px;
+  }
 
-.hero-text {
-  text-align: center;
-  padding: 20px 0px;
-  color: $secondary-color;
-}
+  .hero-text {
+    text-align: center;
+    padding: 20px 0px;
+    color: $secondary-color;
+  }
 
-.button {
-  margin-bottom: 0px;
-  border: 0px;
-  color: $light-tan;
-  font-size: 1.5rem;
-  padding: 0px 15px;
-}
+  .button {
+    margin-bottom: 0px;
+    border: 0px;
+    color: $light-tan;
+    font-size: 1.5rem;
+    padding: 0px 15px;
+  }
 
-.button:hover {
-  background-color: $impact-color;
-  color: $secondary-color;
-}
+  .button:hover {
+    background-color: $impact-color;
+    color: $secondary-color;
+  }
 
-#donate {
-  background-color: $impact-color;
-  color: $secondary-color;
-}
+  #donate {
+    background-color: $impact-color;
+    color: $secondary-color;
+  }
 
-#donate:hover{
-  background-color: $primary-color;
-  color: $light-tan;
-}
+  #donate:hover{
+    background-color: $primary-color;
+    color: $light-tan;
+  }
 }
 // Links
 //––––––––––––––––––––––––––––––––––––––––––––––––––

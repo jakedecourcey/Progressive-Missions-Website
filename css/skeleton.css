@@ -211,6 +211,9 @@ body {
 h1 {
   text-align: center; }
 
+strong {
+  color: #145c9e; }
+
 .navbar-spacer {
   height: 6rem;
   display: block; }
@@ -221,7 +224,17 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99; }
+  z-index: 99;
+  border-bottom: 1px #cbb9a8 solid; }
+  nav img {
+    height: 6rem;
+    display: block; }
+  nav .text-box {
+    height: 6rem;
+    margin-left: -40px; }
+    nav .text-box h4 {
+      line-height: 3rem;
+      margin-bottom: 0rem; }
   nav .navbar-list {
     list-style: none;
     border-left: 1px #cbb9a8 solid; }
