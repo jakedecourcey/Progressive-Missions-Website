@@ -32,31 +32,35 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <body>
+
+  <!-- Navigation -->
   <div class="navbar-spacer" id="home"></div>
   <nav>
 
     <div class="container">
 
       <div class="row">
+        <div class="hide-on-mobile">
+          <div class="two columns">
+            <img src="images/logo.png" alt="Progressive Missions Logo"/>
+            <!--<img src="images/logo.png"/>-->
+          </div>
 
-        <div class="two columns">
-          <img src="images/logo.png" alt="Progressive Missions Logo"/>
-          <!--<img src="images/logo.png"/>-->
+          <div class="three columns">
+            <div class="text-box">
+              <h4>Progressive</h4>
+              <h4>Missions</h4>
+            </div>
+          </div>
         </div>
-
-        <div class="three columns">
-          <div class="text-box">
-          <h4>Progressive</h4>
-          <h4>Missions</h4>
-        </div>
-        </div>
-
         <div class="seven columns">
+
+          <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
 
           <ul class="navbar-list">
 
             <li class="navbar-item">
-              <a class="button" id="donate" href="#donation">Donate</a>
+              <a class="button" id="donate-button" href="#donate">Donate</a>
             </li>
 
             <li class="navbar-item">
@@ -69,11 +73,11 @@
               <ul class="dropdown-list">
 
                 <li class="dropdown-item">
-                  <a class="button" href="#support-orphans">Orphans</a>
+                  <a class="button" href="#support-orphans">Support Orphans</a>
                 </li>
 
                 <li class="dropdown-item">
-                  <a class="button" href="#support-businesses">Businesses</a>
+                  <a class="button" href="#support-businesses">Support Businesses</a>
                 </li>
 
               </ul>
@@ -110,6 +114,7 @@
     </div> <!-- Container -->
 
   </nav>
+  <!-- End Navigation -->
 
   <!--Hero Banner-->
   <div class="hero-image">
@@ -119,15 +124,15 @@
 
         <h3>We address poverty by investing in people</h3>
 
-        <a class="button" id="donate" href="#donation">Donate</a>
+        <a class="button" id="donate-button" href="#donate">Donate</a>
       </div>
     </div>
   </div>
   <!--End hero Banner-->
 
+  <!-- About section -->
   <h2 class="banner">What does it look like to help the needy?</h2>
 
-  <!-- About section -->
   <div class="container">
 
     <div class="row"> <!-- Row 3 -->
@@ -147,12 +152,14 @@
     </div> <!-- Row 3 -->
 
   </div> <!-- End about section -->
+  <!-- End about section -->
 
   <div class="banner-spacer" id="learn"></div>
 
   <h2 class="banner">This is what we do</h2>
 
   <div class="container"> <!-- Project section -->
+    <div class="banner-spacer"  id= id="orphan-project"></div>
 
     <div class="row"> <!-- Row 5 -->
 
@@ -170,6 +177,7 @@
       </div> <!-- Column -->
 
     </div> <!-- Row -->
+    <div class="banner-spacer" id="bop"></div>
 
     <div class="row">
 
@@ -185,97 +193,113 @@
 
           You can make a lasting difference. You can have impact today and for generations to come. Together, we can bring an end to a welfare mindset that keeps people impoverished, dependent, and lacking a hopeful, productive future.</p>
 
-          <blockquote>Aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you, so that you may walk properly before outsiders and be dependent on no one.
-            1 Thessalonians 4:11-12</blockquote>
-          </div>
+        </div>
 
-          <div class="four columns">
-            <img class="u-max-full-width" src="images/square.jpg"/>
-          </div>
+        <div class="four columns">
+          <img class="u-max-full-width" src="images/square.jpg"/>
+        </div>
 
-        </div> <!-- Row -->
+      </div> <!-- Row -->
 
-      </div> <!-- End project section -->
+    </div> <!-- End project section -->
 
-      <div class="banner-spacer" id="get-involved"></div>
-      <h2 class="banner">You have a role</h2>
+    <div class="banner-spacer" id="get-involved"></div>
+    <h2 class="banner">You have a role</h2>
 
-      <div class="container"> <!-- Get involved section -->
+    <div class="container"> <!-- Get involved section -->
 
-        <div class="row">
+      <div class="row">
 
-          <div class="six columns">
+        <div class="six columns">
+          <div class="banner-spacer"  id="support-orphans"></div>
+
+          <h3>Help Orphans</h3>
+
+          <hr/>
+
+          <div class="support-description">
+
+            <h5>Support</h5>
+            <p>With the help of partners like you, Ray of Hope Orphan Centre operates a school for about 275 children. They receive healthy meals and a quality education.
+              A contribution to the project will cover expenses such as
+              <ul>
+                <li>Food</li>
+                <li>School Supplies</li>
+                <li>Teachers' Wages</li>
+                <li>Utilities</li>
+                <li>Dormitories</li>
+              </ul>
+              <a href="#donate">Make a donation to the Uganda Orphan Project today.</a></p>
+
+              <hr/>
+
+            </div>
             <div class="support-description">
 
-              <h5>Project Support</h5>
-              <p>Progressive Missions is currently partnering with Ray of Hope Orphan Centre in Kampala, Uganda. With the help of partners like you, the orphanage now operates a school for about 275 children. They receive healthy meals and a quality education.
-
-                Your contribution to the project will cover expenses such as
-
-                Food: All students are fed two healthy meals each day and resident students receive three meals.
-                School supplies: Books, pencils, paper and other items are provided to enable students to keep up with their assignments.
-                Teachers’ wages: Ray of hope currently employs 8 teachers, an administrator, and a social worker. The social worker is required by law and serves as a liaison between the school and government agencies.
-                Utilities: Water and electricity were installed recently to improve the learning environment.
-                Dormitory: While it is the goal of Ray of Hope to connect these children with families so they have a home to go to at night, there are children in crisis who need a place to sleep. A dormitory setting is provided to keep children safe while long-term solutions are sought.
-
-                Please consider making a donation to the Uganda Orphan Project using the “donate” button in the left column or by mailing your contribution to the address in the left column.</p>
-                <blockquote> If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness and your gloom be as the noonday. Isaiah 58:10 </blockquote>
-
-              </div>
-              <div class="support-description">
-
-                <h5>Orphan Support</h5>
-                <p>Ray of Hope Orphan Centre meets the needs of 275 children. Many of the basic needs of these children would not be met except for the generous contributions of partners. Your support of an orphan will assist the school in providing education, clothes, food, and hope.
-
-                  Would you consider committing to sponsor an orphan for one year? The cost is $40 per month. We will keep you abreast of the progress in the life of your student and in the school. You will receive updates from the school and letters from your child.
-
-                  You can also choose to sponsor a student. A student is a child who attends the school for education and receives two meals daily. They then return to their home at night. The cost to sponsor a student is $10 per month. As with the orphans, you will receive reports and letters from your child.
-
-                  Please click here to see some of the children you can sponsor.
-
-                  If you have questions, let us know using the contact form. If you would like to make a donation, use the button in the left column or mail it to the address in the left column.</p>
-
-                </div>
-
-              </div>
-
-              <div class="six columns">
-
-                <div class="support-description">
-                  <h5>Teach</h5>
-                  <p>PMI deploys teams to teach basic business principles to aspiring business people in developing areas. If you have experience or knowledge in subjects like
-                    <ul>
-                      <li>Crafting a business plan</li>
-                      <li>Accounting</li>
-                      <li>Business Ethics</li>
-                    </ul>
-                    your skills are needed. Use the contact form to let us know.</p>
-                  </div>
-
-                  <div class="support-description">
-                    <h5>Train</h5>
-                    <p>Do you have skills in your specific field that you would share with entrepreneurs in another context? Would you consider mentoring a business person in the field of your expertise? Let us know on the contact form.</p>
-                  </div>
-
-                  <div class="support-description">
-                    <h5>Invest</h5>
-                    <p>Would you consider investing financially in the micro-enterprise system? Your donation will be used to finance micro-loans and ongoing training for these businesses. We will report on the progress of individual businesses and the market cell. For more information, use the contact form or to donate, use the button in the left column or mail a check to the address in the left column.</p>
-                  </div>
-                </div>
-
-              </div>
+              <h5>Sponsor</h5>
+              <p>Ray of Hope Orphan Centre meets the needs of 275 children. The basic needs of these children would not be met except by the generous contributions of sponsors.</p>
+              <p>You can sponsor an orphan for $40 per month, providing food, lodging, and education. We will keep you abreast of the progress in the life of your student and in the school. You will receive updates from the school and letters from your child.</p>
+              <p>You can also sponsor a student for $10 per month. A student is a child who attends the school for education and then returns to their home at night. As with the orphans, you will receive reports and letters from your child.</p>
+              <p><a href="contact">Contact us to sponsor a child.</a></p>
 
             </div>
 
-            <div class="banner-spacer" id="contact"></div>
-            <h2 class="banner">Contact</h2>
+            <hr/>
 
-            <div class="banner-spacer" id="donation"></div>
-            <h2 class="banner">Donate</h2>
+            <blockquote> If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness and your gloom be as the noonday.<br/>- Isaiah 58:10 </blockquote>
 
-          </div> <!-- Container -->
+          </div>
 
-          <!-- End Document
-          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        </body>
-        </html>
+          <div class="six columns">
+            <div class="banner-spacer"  id="support-businesses"></div>
+
+            <h3 id="support-businesses">Help Businesses</h3>
+
+            <hr/>
+
+            <div class="support-description">
+              <h5>Teach</h5>
+              <p>PMI deploys teams to teach basic business principles to aspiring entrepreneurs in developing areas. If you have experience or knowledge in subjects like these, your skills are needed.
+                <ul>
+                  <li>Crafting a business plan</li>
+                  <li>Accounting</li>
+                  <li>Business Ethics</li>
+                </ul>
+                <a href="#contact">Use the contact form to let us know.</a></p>
+              </div>
+
+              <hr/>
+
+              <div class="support-description">
+                <h5>Train</h5>
+                <p>Do you have skills in your specific field that you would share with entrepreneurs in another context? Would you consider mentoring a business person in the field of your expertise?</p>
+                <p><a href="#contact">Let us know on the contact form.</a></p>
+              </div>
+
+              <hr/>
+
+              <div class="support-description">
+                <h5>Invest</h5>
+                <p>Would you consider investing financially in the micro-enterprise system? Your donation will be used to finance micro-loans and ongoing training for developing businesses. We will report on the progress of individual businesses and the market cell.</p>
+                <p><a href="#contact">For more information, contact us here.</a></p>
+              </div>
+
+              <hr/>
+
+              <blockquote>Aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you, so that you may walk properly before outsiders and be dependent on no one.<br/>- 1 Thessalonians 4:11-12</blockquote>
+            </div>
+
+          </div>
+
+        </div> <!-- End get involved section -->
+
+        <div class="banner-spacer" id="contact"></div>
+        <h2 class="banner">Contact</h2>
+
+        <div class="banner-spacer" id="donation"></div>
+        <h2 class="banner">Donate</h2>
+
+        <!-- End Document
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      </body>
+      </html>

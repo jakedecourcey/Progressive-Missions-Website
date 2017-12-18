@@ -17,30 +17,50 @@ body {
   background-color: $secondary-color;
 }
 
-h1 {
-  text-align: center;
-}
-
 strong {
   color: $primary-color;
+}
+
+blockquote {
+  background-color: rgba(255,255,255,.2);
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+  border-radius: $global-radius;
 }
 
 //Navigation
 //-----------------------------------------------------------------
 
-.navbar-spacer{
-  height: 6rem;
-  display: block;
+.navbar-spacer {
+  height: 0rem;
 }
 
 nav {
   background-color: $secondary-color;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   z-index: 99;
-  border-bottom: 1px $dark-tan solid;
+  border-top: 1px $dark-tan solid;
+
+  .icon {
+    position: absolute;
+    bottom: 0;
+    font-size: 4rem;
+    line-height: 4rem;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+
+  .container {
+    padding: 0px;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
 
   img {
     height: 6rem;
@@ -49,7 +69,8 @@ nav {
 
   .text-box {
     height: 6rem;
-    margin-left: -40px;    
+    margin-left: -40px;
+    z-index: 99;
 
     h4 {
       line-height: 3rem;
@@ -59,24 +80,27 @@ nav {
 
   .navbar-list{
     list-style: none;
-    border-left: 1px $dark-tan solid;
+    border-left: 0px $dark-tan solid;
+    margin-bottom: 4.5rem;
   }
 
   .navbar-item {
-    float: right;
+    float: none;
     margin-bottom: 0px;
   }
 
   .button {
-    height: 6rem;
-    line-height: 6rem;
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
     margin-bottom: 0px;
     border: 0px;
     border-radius: 0px;
     color: $light-tan;
     font-size: 1.5rem;
     padding: 0px 15px;
-    border-left: 1px $dark-tan solid;
+    border-bottom: 1px $dark-tan solid;
+    text-align: left;
   }
 
   .button:hover {
@@ -84,26 +108,21 @@ nav {
     color: $secondary-color;
   }
 
-  #donate {
+  #donate-button {
     background-color: $impact-color;
     color: $secondary-color;
     border-right: 0px;
   }
 
-  #donate:hover{
+  #donate-button:hover{
     background-color: $primary-color;
     color: $light-tan;
   }
 
-  #active {
-    background-color: $primary-color;
-  }
-
   .dropdown-list {
-    display: none;
     list-style: none;
-    position: fixed;
-    background-color: $primary-color;
+    position: relative;
+    background-color: $secondary-color;
     margin: 0px;
   }
 
@@ -111,17 +130,12 @@ nav {
     margin: 0px;
 
     .button {
-      width: 100%;
       text-align: left;
-      border: 0px;
+      text-indent: 25px;
+
     }
   }
 
-  .navbar-item:hover {
-    .dropdown-list {
-      display: block;
-    }
-  }
 }
 
 //Banners
@@ -136,20 +150,26 @@ nav {
 
 .banner-spacer {
   height: 6rem;
-  display: block;
+  display: none;
 }
 
 // Hero
 //--------------------------------------------------
 
 .hero-image {
-  background-image: url("../images/hero.jpg");
+  background-image: url("../images/mobile-hero.jpg");
   background-position: bottom;
   background-size: cover;
   padding: 0px;
 
+  h1 {
+    font-weight: 600;
+    font-size: 5rem;
+    text-align: center;
+  }
+
   .hero-mask {
-    background-color: rgba(255,255,255,.7);
+    background-color: rgba(255,255,255,.8);
     padding: 60px 0px;
   }
 
@@ -172,21 +192,23 @@ nav {
     color: $secondary-color;
   }
 
-  #donate {
+  #donate-button {
     background-color: $impact-color;
     color: $secondary-color;
   }
 
-  #donate:hover{
+  #donate-button:hover{
     background-color: $primary-color;
     color: $light-tan;
   }
 }
+
 // Links
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 a {
   color: $link-color;
+  font-weight: 600;
   &:hover {
     color: darken($link-color, 5%);
   }
@@ -200,4 +222,122 @@ hr {
   margin-bottom: 3.5rem;
   border-width: 0;
   border-top: 1px solid $light-tan;
+}
+
+// Larger than tablet
+//--------------------------------------------------
+@media ($bp-larger-than-tablet) {
+
+  .navbar-spacer {
+    height: 6rem;
+  }
+
+  nav {
+    background-color: $secondary-color;
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    border-top: 0px;
+    border-bottom: 1px $dark-tan solid;
+
+    img {
+      height: 6rem;
+      display: block;
+    }
+
+    .text-box {
+      height: 6rem;
+      margin-left: -40px;
+      z-index: 99;
+
+      h4 {
+        line-height: 3rem;
+        margin-bottom: 0rem;
+      }
+    }
+
+    .navbar-list{
+      list-style: none;
+      border-left: 1px $dark-tan solid;
+    }
+
+    .navbar-item {
+      float: right;
+      margin-bottom: 0px;
+      display: block;
+
+    }
+
+    .button {
+      height: 6rem;
+      line-height: 6rem;
+      margin-bottom: 0px;
+      border: 0px;
+      border-radius: 0px;
+      color: $light-tan;
+      font-size: 1.5rem;
+      padding: 0px 15px;
+      border-left: 1px $dark-tan solid;
+    }
+
+    .button:hover {
+      background-color: $impact-color;
+      color: $secondary-color;
+    }
+
+    #donate {
+      background-color: $impact-color;
+      color: $secondary-color;
+      border-right: 0px;
+    }
+
+    #donate:hover{
+      background-color: $primary-color;
+      color: $light-tan;
+    }
+
+    #active {
+      background-color: $primary-color;
+    }
+
+    .dropdown-list {
+      display: none;
+      list-style: none;
+      position: fixed;
+      background-color: $primary-color;
+      margin: 0px;
+    }
+
+    .dropdown-item {
+      margin: 0px;
+
+      .button {
+        width: 100%;
+        text-align: left;
+        border: 0px;
+      }
+    }
+
+    .navbar-item:hover {
+      .dropdown-list {
+        display: block;
+      }
+    }
+  }
+
+  .hero-image {
+    background-image: url("../images/hero.jpg");
+    background-position: bottom;
+    background-size: cover;
+    padding: 0px;
+
+    h1 {
+      font-weight: 600;
+      font-size: 7rem;
+      text-align: center;
+    }
+  }
 }
