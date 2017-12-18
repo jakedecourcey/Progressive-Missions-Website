@@ -222,20 +222,25 @@ blockquote {
   height: 0rem; }
 
 nav {
-  background-color: #041e42;
+  background-color: #145c9e;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   z-index: 99;
   border-top: 1px #cbb9a8 solid; }
-  nav .icon {
+  nav #icon {
+    width: 4rem;
     position: absolute;
     bottom: 0;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 4rem;
     text-decoration: none;
-    margin-left: 10px; }
+    margin-left: 0px;
+    color: #145c9e;
+    background-color: #041e42;
+    border-radius: 20px;
+    text-align: center; }
   nav .container {
     padding: 0px; }
   nav .hide-on-mobile {
@@ -253,10 +258,18 @@ nav {
   nav .navbar-list {
     list-style: none;
     border-left: 0px #cbb9a8 solid;
-    margin-bottom: 4.5rem; }
+    margin-bottom: 4rem; }
   nav .navbar-item {
+    display: none;
     float: none;
     margin-bottom: 0px; }
+    nav .navbar-item:first-child {
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+      display: block; }
+  nav .navbar-show {
+    display: block; }
   nav .button {
     width: 100%;
     height: 4rem;
@@ -282,7 +295,7 @@ nav {
   nav .dropdown-list {
     list-style: none;
     position: relative;
-    background-color: #041e42;
+    background-color: #145c9e;
     margin: 0px; }
   nav .dropdown-item {
     margin: 0px; }

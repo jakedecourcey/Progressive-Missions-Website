@@ -5,11 +5,13 @@
   "repository": "https://github.com/jakedecourcey/Progressive-Missions-Website.git",
   "author": "Jacob DeCourcey <jakedecourcey@gmail.com>",
   "license": "MIT",
-
-"devDependencies": {
+  "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-contrib-watch": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
   }
-  }
+}
