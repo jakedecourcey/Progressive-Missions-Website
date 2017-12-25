@@ -28,8 +28,18 @@
 
   <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="js/scripts.js"></script>
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111513333-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111513333-1');
+</script>
+
 
 </head>
 
@@ -47,69 +57,69 @@
 
       <div class="row>">
         <div class="twelve columns">
-        <div class="navbar-logo">
-          <img src="images/logo.png" alt="Progressive Missions Logo"/>
-        </div> <!-- navber-logo -->
-        <div class="navbar-text">
-          <div class="text-box">
-            <h4>Progressive</h4>
-            <h4>Missions</h4>
-          </div>
-        </div> <!-- navbar-text -->
+          <div class="navbar-logo">
+            <img src="images/logo.png" alt="Progressive Missions Logo"/>
+          </div> <!-- navber-logo -->
+          <div class="navbar-text">
+            <div class="text-box">
+              <h4>Progressive</h4>
+              <h4>Missions</h4>
+            </div>
+          </div> <!-- navbar-text -->
 
-        <a href="javascript:void(0)" id="icon">&#8285;</a>
+          <a href="javascript:void(0)" id="icon">&#8285;</a>
 
-        <ul class="navbar-list">
+          <ul class="navbar-list">
 
-          <li class="navbar-donate">
-            <a class="button" id="donate-button" href="#donate">Donate</a>
-          </li>
+            <li class="navbar-donate">
+              <a class="button" id="donate-button" href="#donate">Donate</a>
+            </li>
 
-          <li class="navbar-item">
-            <a class="button" href="#contact">Contact</a>
-          </li>
+            <li class="navbar-item">
+              <a class="button" href="#contact">Contact</a>
+            </li>
 
-          <li class="navbar-item">
-            <a class="button" href="#get-involved">Get Involved</a>
+            <li class="navbar-item">
+              <a class="button" href="#get-involved">Get Involved</a>
 
-            <ul class="dropdown-list">
+              <ul class="dropdown-list">
 
-              <li class="dropdown-item">
-                <a class="button" href="#support-orphans">Help Orphans</a>
-              </li>
+                <li class="dropdown-item">
+                  <a class="button" href="#support-orphans">Help Orphans</a>
+                </li>
 
-              <li class="dropdown-item">
-                <a class="button" href="#support-businesses">Help Businesses</a>
-              </li>
+                <li class="dropdown-item">
+                  <a class="button" href="#support-businesses">Help Businesses</a>
+                </li>
 
-            </ul>
+              </ul>
 
-          </li>
+            </li>
 
-          <li class="navbar-item">
-            <a class="button" href="#learn">Learn</a>
+            <li class="navbar-item">
+              <a class="button" href="#learn">Learn</a>
 
-            <ul class="dropdown-list">
+              <ul class="dropdown-list">
 
-              <li class="dropdown-item">
-                <a class="button" href="#orphan-project">Orphan Project</a>
-              </li>
+                <li class="dropdown-item">
+                  <a class="button" href="#orphan-project">Orphan Project</a>
+                </li>
 
-              <li class="dropdown-item">
-                <a class="button" href="#bop">Business on Purpose</a>
-              </li>
+                <li class="dropdown-item">
+                  <a class="button" href="#bop">Business on Purpose</a>
+                </li>
 
-            </ul>
+              </ul>
 
-          </li>
+            </li>
 
-          <li class="navbar-item">
-            <a class="button" href="#home">Home</a>
-          </li>
+            <li class="navbar-item">
+              <a class="button" href="#home">Home</a>
+            </li>
 
-        </ul>
+          </ul>
 
-</div> <!-- Twelve columns-->
+        </div> <!-- Twelve columns-->
       </div> <!-- Row -->
     </div> <!-- Container -->
 
@@ -305,41 +315,49 @@
 
       <div class="banner-spacer" id="contact"></div>
       <h2 class="banner">Contact</h2>
-<div class="container">
-  <form id="contact" method="POST" action="http://formspree.io/jakedecourcey@gmail.com">
-  <div class="row">
-    <div class="six columns">
-        <label for="name">Your Name</label>
-        <input class="u-full-width" name="name" placeholder="John Smith" type="text">
+      <div class="container">
+        <form id="contact" method="POST" action="http://formspree.io/jakedecourcey@gmail.com">
+          <div class="row">
+            <div class="six columns">
+              <label for="name">Your Name</label>
+              <input class="u-full-width" name="name" placeholder="John Smith" type="text" required>
+            </div>
+            <div class="six columns">
+              <label for="email">Your Email</label>
+              <input class="u-full-width" name="email" placeholder="example@email.com" type="email" required>
+            </div>
+          </div>
+          <div class="row">
+            <label for="message">Message</label>
+            <textarea class="u-full-width" name="message" placeholder="What would you like to know?" required></textarea>
+          </div>
+          <input id="submit" class="u-full-width" type="submit" value="Submit">
+          <input type="hidden" name="_next" value="www.progressivemissions.org/#contact" />
+        </form>
       </div>
-      <div class="six columns">
-        <label for="email">Your email (required)</label>
-        <input class="u-full-width" name="email" placeholder="example@email.com" type="email">
-      </div>
-    </div>
-      <div class="row">
-        <label for="message">Message</label>
-        <textarea form="contact" class="u-full-width" name="message" placeholder="Anything else you want to say..."></textarea>
-      </div>
-      <!-- <label for="interest">I'm interested in</label>
-       <div class="row">
-        <div class="six columns">
-        <input id="interest" type="checkbox"> Orphanage Support <br>
-        <input id="interest" type="checkbox"> Child Sponsorship <br>
-      </div>
-      <div class="six columns">
-        <input id="interest" type="checkbox"> Business on Purpose <br>
-        <input id="interest" type="checkbox"> Learning More <br>
-      </div>
-    </div> -->
-        <input id="submit" class="u-full-width" type="submit" value="Submit">
-</form>
-</div>
 
-      <div class="banner-spacer" id="donation"></div>
-      <h2 class="banner">Donate</h2>
+      <div class="banner-spacer" id="donate"></div>
+      <h2 class="banner donate-banner">Donate</h2>
+      <div class='container'>
+      <div class='row'>
+        <div class='six columns'>
+          <h3>Donate with Paypal</h3>
+          <p>Paypal button goes here</p>
+        </div>
+        <div class='six columns'>
+          <h3>Donate by Check</h3>
+          <p>Make a check out to "Progressive Missions Inc." and mail it to
+            <blockquote>Progressive Missions, Inc.<br>PO Box 5231<br>Fredericksburg, VA 22403</blockquote></p>
+            </div>
+          </div>
+        </div>
 
-      <!-- End Document
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    </body>
-    </html>
+        <footer>
+          <div class='container'>
+            <p>Site design by Jacob DeCourcey</p>
+          </div>
+        </footer>
+          <!-- End Document
+          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        </body>
+        </html>

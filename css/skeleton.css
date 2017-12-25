@@ -220,6 +220,12 @@ blockquote {
   margin: 0px;
   border-radius: 4px; }
 
+footer {
+  background-color: #145c9e;
+  font-size: 1rem;
+  text-align: center;
+  padding: 3rem 0; }
+
 .navbar-spacer {
   height: 0rem;
   width: 100%; }
@@ -322,6 +328,10 @@ nav {
 
 .banner-spacer {
   height: 0rem; }
+
+.donate-banner {
+  background-color: #f8b217;
+  color: #041e42; }
 
 .hero-image {
   background-image: url("../images/mobile-hero.jpg");
@@ -453,10 +463,9 @@ hr {
     .hero-image h1 {
       font-weight: 600;
       font-size: 7rem;
-      text-align: center; } }
-
-.banner-spacer {
-  height: 6rem; }
+      text-align: center; }
+  .banner-spacer {
+    height: 6rem; } }
 
 .u-full-width {
   width: 100%;

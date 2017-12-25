@@ -32,6 +32,13 @@ blockquote {
   border-radius: $global-radius;
 }
 
+footer {
+  background-color: $primary-color;
+  font-size: 1rem;
+  text-align: center;
+  padding: 3rem 0;
+}
+
 //Navigation
 //-----------------------------------------------------------------
 
@@ -181,6 +188,11 @@ nav {
 
 .banner-spacer {
   height: 0rem;
+}
+
+.donate-banner {
+  background-color: $impact-color;
+  color: $secondary-color;
 }
 
 // Hero
@@ -390,8 +402,9 @@ hr {
       text-align: center;
     }
   }
-}
 
-.banner-spacer {
-  height: 6rem;
+
+  .banner-spacer {
+    height: 6rem;
+  }
 }
